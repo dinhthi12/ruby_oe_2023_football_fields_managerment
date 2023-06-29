@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 # ruby_oe_2023_football_fields_managerment
-=======
 # README
 
 This README would normally document whatever steps are necessary to get the

@@ -1,0 +1,14 @@
+vi:
+  language: "Ngôn ngữ"
+
+  base_title: "Sân bóng đá Đa Phước"
+  homepage: "Trang chủ"
+  helppage: "Giúp đỡ"
+  static_pages:
+    home:
+      title: "Trang chủ"
+      wellcome: "Chào mừng bạn tới với sân bóng Đa Phước"
+      register: "Đăng ký ngay"
+      text: "Hãy đăng ký là thành viên của sân Đa Phước để theo dõi tin tức đặt sân nhanh chóng theo nhu cầu của bạn"
+      card_title: "Thông tin mới nhất"
+      content: "Bóng đá được mệnh danh là môn 'thể thao vua' được yêu thích nhất trên toàn thế giới, mỗi trận đấu bóng luôn nhận được sự quan tâm của rất nhiều fan hâm mộ qua từng mùa giải, trong đó có Việt Nam"
