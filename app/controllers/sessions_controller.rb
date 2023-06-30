@@ -6,13 +6,15 @@ class SessionsController < ApplicationController
     if user&.authenticate params.dig(:session, :password)
       login_success user
     else
-      flash[:danger] = t "notification.failed"
+      flash.now[:error] = t "notification.failed"
       render :new
     end
   end
 
   def destroy
     log_out if logged_in?
+    flash[:success] = t "notification.success"
+
     redirect_to root_url
   end
 
@@ -22,6 +24,6 @@ class SessionsController < ApplicationController
     log_in user
     params[:session][:remember_me] == "1" ? remember(user) : forget(user)
     flash[:success] = t "notification.success"
-    redirect_to user
+    redirect_to user.admin? ? admin_root_path : root_path
   end
 end

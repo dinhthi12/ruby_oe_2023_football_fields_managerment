@@ -22,6 +22,12 @@ vi:
       text: "Hãy đăng ký là thành viên của sân Đa Phước để theo dõi tin tức đặt sân nhanh chóng theo nhu cầu của bạn"
       card_title: "Thông tin mới nhất"
       content: "Bóng đá được mệnh danh là môn 'thể thao vua' được yêu thích nhất trên toàn thế giới, mỗi trận đấu bóng luôn nhận được sự quan tâm của rất nhiều fan hâm mộ qua từng mùa giải, trong đó có Việt Nam"
+    admin_home:
+      wellcome: "Chào mừng bạn tới với trang admin"
+      text: "Hãy đăng ký là thành viên của sân Đa Phước để theo dõi tin tức đặt sân nhanh chóng theo nhu cầu của bạn"
+    admin_help:
+       wellcome: "Chào mừng bạn tới với trang Giúp đỡ"
+       text: "Hãy đăng ký là thành viên của sân Đa Phước để theo dõi tin tức đặt sân nhanh chóng theo nhu cầu của bạn"
   user:
     home:
       log_out: "Đăng xuất"
@@ -37,3 +43,8 @@ vi:
    success: "Thành công"
    err: "lỗi"
    failed: "Thất bại"
+
+  admin:
+    list_users: "Danh sách người dùng"
+    list_pitchs: "Danh sách sân"
+    list_services: "Danh sách dịch vụ"
