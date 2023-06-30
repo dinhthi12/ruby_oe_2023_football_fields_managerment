@@ -1,1 +1,14 @@
 bg_img_link: "bong-da.jpg"
+user:
+  password:
+  #password < 9 ky tu, phai chua chu cai vao so va ky tu dac biet
+    regex: !ruby/regexp /(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[\W]).{8,}/
+  email:
+    regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+/
+  phone:
+  #regex sdt viet nam
+    regex: !ruby/regexp /(84|0[3|5|7|8|9])+([0-9]{8})\b/
+  user_url: "https://secure.gravatar.com/avatar/#{gravatar_id}"
+digits:
+  length_10: 10
+  length_30: 30
