@@ -17,7 +17,7 @@ class UsersController < ApplicationController
       flash[:success] = t "notification.success"
       redirect_to login_path
     else
-      flash[:warning] = t "notification.err"
+      flash.now[:warning] = t "notification.err"
       render :new
     end
   end

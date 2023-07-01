@@ -9,6 +9,14 @@ Rails.application.routes.draw do
     get "/login", to: "sessions#new"
     post "/login", to: "sessions#create"
     delete "/logout", to: "sessions#destroy"
+
     resources :users, only: %i(new create show)
+
+    namespace :admin do
+      root to: "static_pages#home"
+      get "/home", to: "static_pages#home"
+      get "/help", to: "static_pages#help"
+      resources :pitchs
+    end
   end
 end
