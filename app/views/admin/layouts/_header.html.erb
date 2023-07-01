@@ -1,11 +1,11 @@
 <nav class="navbar navbar-expand-lg navbar-light py-3" id="mainNav">
   <div class="container px-4 px-lg-5">
-    <%= link_to t("base_title"), root_path, class: "navbar-brand", id: "logo" %>
+    <%= link_to t("base_title"), admin_root_path, class: "navbar-brand", id: "logo" %>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ms-auto my-2 my-lg-0">
         <li class="nav-item">
-          <%= link_to t("homepage"),root_path, class: "nav-link active" %>
+          <%= link_to t("homepage"), admin_root_path, class: "nav-link active" %>
         </li>
         <li class="nav-item">
           <%= link_to t("helppage"), static_pages_help_path, class: "nav-link active" %>
@@ -16,7 +16,7 @@
               <%= t "user.home.account" %>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><%= link_to t("user.home.info_user"), user_path(current_user), class: "nav-link active" %></li>
+              <li><%= link_to t("user.home.info_user"), admin_user_path(current_user), class: "nav-link active" %></li>
               <li><%= link_to t("user.home.log_out"), logout_path, method: :delete, class: "dropdown-item" %></li>
             </ul>
           </li>

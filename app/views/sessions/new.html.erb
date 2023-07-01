@@ -1,20 +1,21 @@
 <% provide :title, t("user.home.log_in") %>
-<div class="jumbotron">
-  <h1 class="text-center text-danger"><%= t "user.home.log_in" %></h1>
-  <div class="row">
-    <div class="col-md-6 offset-md-3">
-      <%= form_for :session, url: login_path do |f| %>
-        <%= f.label :email, t(User.human_attribute_name :email) %>
-        <%= f.email_field :email, class: "form-control" %>
-        <%= f.label :password, t(User.human_attribute_name :password) %>
-        <%= f.password_field :password, class: "form-control" %>
-        <%= f.label :remember_me, class: "checkbox inline" do %>
-          <%= f.check_box :remember_me %>
-          <span><%= t "user.home.remember_me" %></span>
-        <% end %>
-      </br>
-      <%= f.submit t("user.home.log_in"), class: "btn btn-primary" %>
-    <% end %>
+<header class="py-5">
+  <div class="container px-lg-5">
+    <h1 class="display-5 fw-bold text-center"><%= t "user.home.log_in" %></h1>
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <%= form_for :session, url: login_path do |f| %>
+          <%= f.label :email, t(User.human_attribute_name :email) %>
+          <%= f.email_field :email, class: "form-control" %>
+          <%= f.label :password, t(User.human_attribute_name :password) %>
+          <%= f.password_field :password, class: "form-control" %>
+          <%= f.label :remember_me, class: "checkbox inline" do %>
+            <%= f.check_box :remember_me %>
+            <span><%= t "user.home.remember_me" %></span>
+          <% end %>
+        </br>
+        <%= f.submit t("user.home.log_in"), class: "btn btn-primary" %>
+      <% end %>
+    </div>
   </div>
-</div>
-</div>
+</header>

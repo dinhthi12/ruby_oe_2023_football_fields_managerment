@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application_admin", media: "all", "data-turbolinks-track": "reload" %>
+    <%= javascript_pack_tag "application_admin", "data-turbolinks-track": "reload" %>
+  </head>
+  <body>
+    <%= render "admin/layouts/header"%>
+    <div class="d-flex" id="wrapper">
+      <%= render "admin/layouts/sidebar"%>
+      <div class="container-fluid">
+        <h1 class="mt-4">Simple Sidebar</h1>
+        <%= toastr_flash %>
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>
