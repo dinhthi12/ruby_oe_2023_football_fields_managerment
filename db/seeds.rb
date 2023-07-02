@@ -27,8 +27,11 @@ for n in 1..30
                 rate: 3,
                 hour_price: 200000)
 end
+<<<<<<< HEAD
 for n in 1..30
   Service.create!(name: Faker::Name.name,
                 quantity: 5,
                 price: 10000)
 end
+=======
+>>>>>>> admin crud

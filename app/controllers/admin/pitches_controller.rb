@@ -34,8 +34,6 @@ class Admin::PitchesController < Admin::BaseController
     @pagy, @pitches = pagy Pitch.sort_list_pitch, items: Settings.digits.pagy_10
   end
 
-  def destroy; end
-
   private
 
   def find_pitch

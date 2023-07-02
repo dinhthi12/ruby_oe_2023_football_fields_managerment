@@ -4,22 +4,8 @@
     <h1 class="display-5 fw-bold text-center"><%= t "admin.pitch_create" %></h1>
     <div class="row">
       <div class="col-md-6 offset-md-3">
-        <%= form_for @pitch, url: admin_pitches_path do |f| %>
-          <%= render "shared/error_messages", object: f.object %>
-          <%= f.label :name, t(Pitch.human_attribute_name :name) %>
-          <%= f.text_field :name, class: "form-control" %>
-          <%= f.label :pitch_type, t(Pitch.human_attribute_name :pitch_type) %>
-          <%= f.select :pitch_type, field_type, class: "form-control select" %>
-          <%= f.label :rate, t(Pitch.human_attribute_name :rate) %>
-          <%= f.select :rate, rate, class: "form-control select" %>
-          <%= f.label :hour_price, t(Pitch.human_attribute_name :hour_price) %>
-          <%= f.number_field :hour_price, in: Settings.pitch.price_range,
-                                      step: Settings.pitch.price_step,
-                                      :value => Settings.pitch.price_default, class: "form-control" %>
-          <%= f.label :image, t(Pitch.human_attribute_name :image) %>
-          <%= f.file_field :image, accept: Settings.image.accept_path, class: "form-control" %>
-          <%= f.submit t("btn.create"), class: "btn btn-primary" %>
-        <% end %>
+         <%= render "form", url: admin_pitches_path  %>
       </div>
     </div>
-  </header>
+  </div>
+</header>
