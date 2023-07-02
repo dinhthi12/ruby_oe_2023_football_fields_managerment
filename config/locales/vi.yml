@@ -2,6 +2,7 @@ vi:
   activerecord:
     models:
       user: "Người dùng"
+      pitch: "san"
     attributes:
       user:
         name: "Tên"
@@ -10,6 +11,13 @@ vi:
         phone: "Số điện thoại"
         address: "Địa chỉ"
         confirmation: "Xác nhận mật khẩu"
+      pitch:
+        name: "Ten san"
+        pitch_type: "Loai san"
+        rate: "Danh gia"
+        hour_price: "gio san"
+        image: "Hinh anh"
+
   language: "Ngôn ngữ"
   base_title: "Sân bóng đá Đa Phước"
   homepage: "Trang chủ"
@@ -38,13 +46,47 @@ vi:
       info_user: "Thông tin cá nhân"
 
   shared:
-    error_text: "lỗi"
+   error_text: "lỗi"
   notification:
    success: "Thành công"
    err: "lỗi"
    failed: "Thất bại"
+   notfound: "khong tim thay"
 
   admin:
     list_users: "Danh sách người dùng"
     list_pitchs: "Danh sách sân"
     list_services: "Danh sách dịch vụ"
+    pitch_create: "Tạo sân"
+    pitch_edit: "Sua san"
+
+  table:
+    id: "Mã"
+    name: "Tên"
+    email: "Email"
+    phone: "Số điện thoại"
+    address: "Địa chỉ"
+    action: "Hành động"
+    name_pitch: "Tên sân"
+    pitch_type: "Loại sân"
+    hour_price: "Giá sân"
+    rate: "Đánh giá"
+  btn:
+    detail: "Xem chi tiết"
+    edit: "Sửa"
+    delete: "Xóa"
+    create: "Tạo mới"
+
+  models:
+    pich:
+      valid_format: "cần phải đúng định dạng hình ảnh"
+      should_less_than: "cần nhỏ hơn 5MB"
+
+  number:
+    currency:
+      format:
+        unit: "vnd"
+        delimiter: ","
+        separator: "."
+        precision: 3
+        format: "%n%u"

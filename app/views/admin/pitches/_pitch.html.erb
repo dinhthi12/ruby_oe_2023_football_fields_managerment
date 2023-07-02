@@ -1,0 +1,11 @@
+<tr>
+  <td><%= pitch.name %></td>
+  <td><%= pitch.rate %></td>
+  <td><%= pitch.pitch_type %></td>
+  <td><%= number_to_currency( pitch.hour_price) %></td>
+  <td>
+    <%= link_to t("btn.detail"),admin_pitch_path(pitch), class: "btn btn-primary" %>
+    <%= link_to t( "btn.edit"),edit_admin_pitch_path(pitch), class: "btn btn-info" %>
+    <%= link_to t("btn.delete"),admin_pitch_path(pitch), method: :delete, data: { confirm: t("you_sure") }, class: "btn btn-danger" %>
+  </td>
+</tr>
