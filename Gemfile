@@ -1,17 +1,14 @@
 source "https://rubygems.org"
-git_source(:github){|repo| "https://github.com/#{repo}.git"}
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.0.2"
 
-gem "active_storage_validations"
 gem "bcrypt", "3.1.13"
 gem "bootstrap"
 gem "config"
 gem "htmlbeautifier", "~> 1.3", ">= 1.3.1"
-gem "image_processing", "1.9.3"
 gem "jbuilder", "~> 2.7"
 gem "jquery-rails", "~> 4.3", ">= 4.3.1"
-gem "mini_magick", "4.9.5"
 gem "mysql2", "~> 0.5"
 gem "puma", "~> 5.0"
 gem "rails", "~> 6.1.7", ">= 6.1.7.3"
@@ -19,6 +16,11 @@ gem "rails-i18n"
 gem "sass-rails", ">= 6"
 gem "turbolinks", "~> 5"
 gem "webpacker", "~> 5.0"
+gem "faker", "~> 3.2"
+gem "pagy"
+gem "image_processing", "1.9.3"
+gem "mini_magick", "4.9.5"
+gem "active_storage_validations", "0.8.2"
 
 gem "bootsnap", ">= 1.4.4", require: false
 

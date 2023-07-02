@@ -48,3 +48,20 @@ vi:
     list_users: "Danh sách người dùng"
     list_pitchs: "Danh sách sân"
     list_services: "Danh sách dịch vụ"
+
+  table:
+    id: "Mã"
+    name: "Tên"
+    email: "Email"
+    phone: "Số điện thoại"
+    address: "Địa chỉ"
+    action: "Hành động"
+    name_pitch: "Tên sân"
+    pitch_type: "Loại sân"
+    hour_price: "Giá sân"
+    rate: "Đánh giá"
+  btn:
+    detail: "Xem chi tiết"
+    edit: "Sửa"
+    delete: "Xóa"
+    create: "Tạo mới"

@@ -1,0 +1,23 @@
+<div class="container site-section">
+  <div class="row">
+    <h3><%= t ".detail" %></h3>
+    <div class="col-lg-6">
+      <div class="custom-media d-flex">
+        <div class="mr-4">
+          <%= gravatar_for(@user, size: Settings.image.soccer_field.size) %>
+        </div>
+        <div class="text">
+          <p><strong><%= t "table.name"%></strong>: <%= @user.name %></p>
+          <p><strong><%= t "table.address"%></strong>: <%= @user.address %></p>
+          <p><strong><%= t "table.phone"%></strong>: <%= @user.phone %></p>
+          <p><strong><%= t "table.email"%></strong>: <%= @user.email %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <h3><%= t ".order_form" %></h3>
+    <p>Hien thi danh sach san da dat boi user</p>
+  </div>
+</div>

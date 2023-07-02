@@ -1,0 +1,23 @@
+<div class="container site-section">
+  <div class="row">
+    <h3><%= t ".detail" %></h3>
+    <div class="col-lg-6">
+      <div class="custom-media d-flex">
+        <div class="text">
+          <p><strong><%= t "table.name_pitch"%></strong>: <%= @pitch.name %></p>
+          <p><strong><%= t "table.pitch_type"%></strong>: <%= @pitch.pitch_type %></p>
+          <p><strong><%= t "table.rate"%></strong>: <%= @pitch.rate %>*</p>
+          <p><strong><%= t "table.hour_price"%></strong>: <%= @pitch.hour_price %> VND</p>
+        </div>
+      </div>
+      <div class="mr-4">
+        <%= image_tag @pitch.image if @pitch.image.attached? %>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <h3><%= t ".order_form" %></h3>
+    <p>Hien thi danh sach user da dat san</p>
+  </div>
+</div>
