@@ -10,13 +10,16 @@
         <li class="nav-item">
           <%= link_to t("helppage"), static_pages_help_path, class: "nav-link active" %>
         </li>
+        <li class="nav-item">
+          <%= link_to t("pitchpage"), pitches_path, class: "nav-link active" %>
+        </li>
         <% if logged_in? %>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <%= t "user.home.account" %>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><%= link_to t("user.home.info_user"), user_path(current_user), class: "nav-link active" %></li>
+              <li><%= link_to t("user.home.info_user"), user_path(current_user), class: "dropdown-item" %></li>
               <li><%= link_to t("user.home.log_out"), logout_path, method: :delete, class: "dropdown-item" %></li>
             </ul>
           </li>

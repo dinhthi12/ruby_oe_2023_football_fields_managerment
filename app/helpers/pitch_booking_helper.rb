@@ -1,0 +1,2 @@
+module PitchBookingHelper
+end
