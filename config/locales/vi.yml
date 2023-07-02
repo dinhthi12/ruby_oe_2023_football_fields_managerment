@@ -10,10 +10,12 @@ vi:
         phone: "Số điện thoại"
         address: "Địa chỉ"
         confirmation: "Xác nhận mật khẩu"
+        des: "Mô tả"
   language: "Ngôn ngữ"
   base_title: "Sân bóng đá Đa Phước"
   homepage: "Trang chủ"
   helppage: "Giúp đỡ"
+  pitchpage: "Sân bóng"
   static_pages:
     home:
       title: "Trang chủ"
@@ -36,6 +38,12 @@ vi:
       register: "Đăng ký"
       remember_me: "Ghi nhớ đăng nhập"
       info_user: "Thông tin cá nhân"
+      service: "Dịch vụ đi kèm"
+      addService: "Thêm dịch vụ"
+      detail: "Thông tin chi tiết"
+      order_form: "Form đặt sân"
+      remove_service: "Xóa dịch vụ"
+      number: "Số lượng"
 
   shared:
     error_text: "lỗi"
@@ -65,3 +73,12 @@ vi:
     edit: "Sửa"
     delete: "Xóa"
     create: "Tạo mới"
+    booking_pitch: "Đặt sân"
+  number:
+    currency:
+      format:
+        unit: "vnd"
+        delimiter: ","
+        separator: "."
+        precision: 3
+        format: "%n%u"

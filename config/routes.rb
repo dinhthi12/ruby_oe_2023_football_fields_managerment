@@ -12,6 +12,12 @@ Rails.application.routes.draw do
 
     resources :users, only: %i(new create show)
 
+    resources :pitches, only: %i(index show)
+
+    resources :pitches do
+      resources :pitch_booking
+    end
+
     namespace :admin do
       root to: "static_pages#home"
       get "/home", to: "static_pages#home"
