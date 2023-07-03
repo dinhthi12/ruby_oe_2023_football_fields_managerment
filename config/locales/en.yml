@@ -1,6 +1,16 @@
 en:
+  activerecord:
+    models:
+      user: "user"
+    attributes:
+      user:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        confirmation: "Confirm Password"
+        address: "Address"
+        phone: "Phone"
   language: "Language"
-
   base_title: "Đa Phước football field"
   homepage: "Home"
   helppage: "Help"
@@ -12,3 +22,18 @@ en:
       text: "Please register as a member of Da Phuoc yard to follow the news of booking quickly according to your needs"
       card_title: "Latest news"
       content: "Football is known as the most loved 'sport of kings' around the world, each football match always receives the attention of many fans through each season, including Vietnam"
+  user:
+    home:
+      log_out: "Log out"
+      account: "Account"
+      log_in: "Log in"
+      register: "Register"
+      remember_me: "Remember me"
+      infor_user: "Information"
+
+    shared:
+    error_text: "Error"
+  notification:
+    success: "Successful"
+    err: "Error"
+    failed: "Failed"
