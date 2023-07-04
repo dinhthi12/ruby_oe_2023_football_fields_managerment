@@ -22,6 +22,13 @@ en:
       text: "Please register as a member of Da Phuoc yard to follow the news of booking quickly according to your needs"
       card_title: "Latest news"
       content: "Football is known as the most loved 'sport of kings' around the world, each football match always receives the attention of many fans through each season, including Vietnam"
+    admin_home:
+      wellcome: "Welcome to page admin"
+      text: "Please register as a member of Da Phuoc yard to follow the news of booking quickly according to your needs"
+    admin_help:
+      wellcome: "Welcome to page help"
+      text: "Please register as a member of Da Phuoc yard to follow the news of booking quickly according to your needs"
+
   user:
     home:
       log_out: "Log out"
@@ -37,3 +44,8 @@ en:
     success: "Successful"
     err: "Error"
     failed: "Failed"
+
+  admin:
+    list_users: "List users"
+    list_pitchs: "List pitchs"
+    list_services: "List services"
