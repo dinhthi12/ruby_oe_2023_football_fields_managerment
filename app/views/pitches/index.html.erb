@@ -1,0 +1,19 @@
+<%= form_with url: pitches_path, method: :get do |f| %>
+  <%= f.text_field :query, class: "search-form" %>
+  <%= f.submit t("btn.search"), class: "btn btn-primary" %>
+<% end %>
+<table class="table text-center">
+  <thead>
+    <tr>
+      <th><%= t "table.name_pitch" %></th>
+      <th><%= t "table.rate" %></th>
+      <th><%= t "table.pitch_type" %></th>
+      <th><%= t "table.hour_price" %></th>
+      <th><%= t "table.action" %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @pitches %>
+  </tbody>
+</table>
+<%== pagy_bootstrap_nav(@pagy) %>

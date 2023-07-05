@@ -13,6 +13,15 @@ class Pitch < ApplicationRecord
 
   scope :sort_list_pitch, ->{order :name}
 
+  scope :search_text, lambda {|query|
+                        where(
+                          "name LIKE :search OR hour_price LIKE :search OR rate
+                          LIKE :search OR
+       pitch_type LIKE :search",
+                          search: "%#{query}%"
+                        )
+                      }
+
   def display_image
     image.variant resize_to_limit: Settings.image.resize_to_limit
   end

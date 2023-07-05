@@ -22,6 +22,7 @@ vi:
   base_title: "Sân bóng đá Đa Phước"
   homepage: "Trang chủ"
   helppage: "Giúp đỡ"
+  pitchpage: "San bong"
   static_pages:
     home:
       title: "Trang chủ"
@@ -76,7 +77,8 @@ vi:
     edit: "Sửa"
     delete: "Xóa"
     create: "Tạo mới"
-
+    notlogin: "Ban chua dang nhap"
+    search: "Tim kiem"
   models:
     pich:
       valid_format: "cần phải đúng định dạng hình ảnh"
