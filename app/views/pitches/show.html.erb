@@ -7,7 +7,7 @@
           <p><strong><%= t "table.name_pitch"%></strong>: <%= @pitch.name %></p>
           <p><strong><%= t "table.pitch_type"%></strong>: <%= @pitch.pitch_type %></p>
           <p><strong><%= t "table.rate"%></strong>: <%= @pitch.rate %>*</p>
-          <p><strong><%= t "table.hour_price"%></strong>: <%= @pitch.hour_price %> VND</p>
+          <p><strong><%= t "table.hour_price"%></strong>: <%= number_to_currency(@pitch.hour_price) %></p>
         </div>
       </div>
       <div class="mr-4">

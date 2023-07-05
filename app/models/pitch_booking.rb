@@ -1,10 +1,13 @@
 class PitchBooking < ApplicationRecord
   PARAMS = [:user_id, :time_start,
-    :time_end, :status,
+    :time_end, :total_price, :status,
     :des, :phone, :name,
     {pitch_booking_services_attributes: %i(
       service_id number _destroy
     )}].freeze
+
+  attr_accessor :time_start, :time_end
+
   belongs_to :user
   belongs_to :pitch
   has_many :pitch_booking_services, dependent: :destroy
@@ -19,5 +22,11 @@ class PitchBooking < ApplicationRecord
   validates :phone, presence: true,
                     format: {with: Settings.user.phone.regex}
 
+  # def check_time
+  #   start_time = DateTime.parse(time_start)
+  #   formatted_time = start_time.strftime("%Y-%m-%d %H:%M")
+  #   return unless formatted_time < Time.zone.now
 
+  #   errors.add(:time_start, "Sai")
+  # end
 end
