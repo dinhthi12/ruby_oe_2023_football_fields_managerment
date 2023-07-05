@@ -11,7 +11,10 @@ class Pitch < ApplicationRecord
   validates :pitch_type, :hour_price, presence: true,
   numericality: {only_integer: true}
 
-  scope :sort_list_pitch, ->{order :name}
+  scope :search_by_price_range, lambda {|max_price|
+    where("hour_price BETWEEN 0 AND ?", max_price.to_s) if max_price.present?
+  }
+  scope :search_by_name, ->(name){where("name LIKE ?", name) if name.present?}
 
   def display_image
     image.variant resize_to_limit: Settings.image.resize_to_limit
