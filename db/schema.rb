@@ -54,7 +54,7 @@ ActiveRecord::Schema.define(version: 2023_06_30_070250) do
     t.datetime "time_start"
     t.datetime "time_end"
     t.bigint "total_price"
-    t.integer "status"
+    t.integer "status", default: 0
     t.text "des"
     t.string "phone"
     t.string "name"

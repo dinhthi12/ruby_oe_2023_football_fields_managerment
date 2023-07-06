@@ -10,6 +10,7 @@ require("@rails/activestorage").start();
 require("channels");
 require("jquery");
 require("@nathanvda/cocoon")
+require("jquery-datetimepicker")
 import "bootstrap";
 global.toastr = require("toastr");
 toastr.options = {

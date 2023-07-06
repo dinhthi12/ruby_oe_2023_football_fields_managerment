@@ -12,8 +12,6 @@ class Pitch < ApplicationRecord
   validates :pitch_type, :hour_price, presence: true,
   numericality: {only_integer: true}
 
-
-
   scope :sort_list_pitch, ->{order :name}
 
   scope :search_text, lambda {|query|

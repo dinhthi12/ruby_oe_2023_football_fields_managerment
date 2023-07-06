@@ -4,15 +4,15 @@
   <%= form.hidden_field :pitch_id, value: @pitch_booking.pitch_id %>
   <div class="field">
     <%= render "shared/error_messages", object: form.object %>
-    <%= form.label :time_start, t(User.human_attribute_name :time_start) %>
-    <%= form.datetime_field :time_start, class: "form-control" %>
-    <%= form.label :time_end, t(User.human_attribute_name :time_end) %>
+    <%= form.label :time_start, t(PitchBooking.human_attribute_name :time_start) %>
+    <%= form.datetime_field :time_start, class: "form-control",  min: "2014-05-20T00:00:00" %>
+    <%= form.label :time_end, t(PitchBooking.human_attribute_name :time_end) %>
     <%= form.datetime_field :time_end, class: "form-control " %>
-    <%= form.label :name, t(User.human_attribute_name :name) %>
+    <%= form.label :name, t(PitchBooking.human_attribute_name :name) %>
     <%= form.text_field :name, class: "form-control" %>
-    <%= form.label :phone, t(User.human_attribute_name :phone) %>
+    <%= form.label :phone, t(PitchBooking.human_attribute_name :phone) %>
     <%= form.text_field :phone, class: "form-control" %>
-    <%= form.label :des, t(User.human_attribute_name :des) %>
+    <%= form.label :des, t(PitchBooking.human_attribute_name :des) %>
     <%= form.text_area :des, class: "form-control" %>
   </div>
   <h3><%= t "user.home.service" %></h3>
