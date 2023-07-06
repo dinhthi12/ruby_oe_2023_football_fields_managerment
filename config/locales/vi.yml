@@ -2,7 +2,7 @@ vi:
   activerecord:
     models:
       user: "Người dùng"
-      pitch: "san"
+      pitch: "sân"
     attributes:
       user:
         name: "Tên"
@@ -11,18 +11,21 @@ vi:
         phone: "Số điện thoại"
         address: "Địa chỉ"
         confirmation: "Xác nhận mật khẩu"
+        des: "Mô tả"
+        time_start: "Thời gian bắt đầu"
+        time_end: "Thời gian kết thúc"
       pitch:
-        name: "Ten san"
-        pitch_type: "Loai san"
-        rate: "Danh gia"
-        hour_price: "gio san"
-        image: "Hinh anh"
+        name: "Tên sân"
+        pitch_type: "Loại sân"
+        rate: "Đánh giá"
+        hour_price: "giờ sân"
+        image: "Hình ảnh"
 
   language: "Ngôn ngữ"
   base_title: "Sân bóng đá Đa Phước"
   homepage: "Trang chủ"
   helppage: "Giúp đỡ"
-  pitchpage: "San bong"
+  pitchpage: "Sân bóng"
   static_pages:
     home:
       title: "Trang chủ"
@@ -45,6 +48,11 @@ vi:
       register: "Đăng ký"
       remember_me: "Ghi nhớ đăng nhập"
       info_user: "Thông tin cá nhân"
+      service: "Dịch vụ đi kèm"
+      addService: "Thêm dịch vụ"
+      order_form: "Form đặt sân"
+      remove_service: "Xóa dịch vụ"
+      number: "Số lượng"
 
   shared:
    error_text: "lỗi"
@@ -52,15 +60,15 @@ vi:
    success: "Thành công"
    err: "lỗi"
    failed: "Thất bại"
-   notfound: "khong tim thay"
-   notlogin: "Ban chua dang nhap"
+   notfound: "Không tìm thấy"
+   notlogin: "Bạn chưa đăng nhập"
 
   admin:
     list_users: "Danh sách người dùng"
     list_pitchs: "Danh sách sân"
     list_services: "Danh sách dịch vụ"
     pitch_create: "Tạo sân"
-    pitch_edit: "Sua san"
+    pitch_edit: "Sửa sân"
 
   table:
     id: "Mã"
@@ -78,8 +86,9 @@ vi:
     edit: "Sửa"
     delete: "Xóa"
     create: "Tạo mới"
-    notlogin: "Ban chua dang nhap"
-    search: "Tim kiem"
+    notlogin: "Bạn chưa đăng nhập"
+    search: "Tìm kiếm"
+    booking_pitch: "Đặt sân"
   models:
     pich:
       valid_format: "cần phải đúng định dạng hình ảnh"
@@ -94,4 +103,6 @@ vi:
         precision: 3
         format: "%n%u"
   pitch:
-    detail: "Thong tin chi tiet san"
+    detail: "Thông tin chi tiết sân"
+    lispitch: "Danh sách sân"
+    formbooking: "Đơn đặt sân"

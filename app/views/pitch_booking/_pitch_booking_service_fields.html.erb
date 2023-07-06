@@ -1,0 +1,9 @@
+<div class="nested-fields">
+  <div class="field">
+    <%= f.label :service, t("user.home.service") %>
+    <%= f.select :service_id, options_for_select(@services.map { |s| [s.name, s.id] }), {}, class: "form-control" %>
+    <%= f.label :number, t("user.home.number") %>
+    <%= f.number_field :number, class: "form-control" %>
+    <%= link_to_remove_association t("user.home.remove_service"), f %>
+  </div>
+</div>

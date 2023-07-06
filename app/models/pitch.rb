@@ -3,7 +3,6 @@ class Pitch < ApplicationRecord
 
   has_many :pitch_bookings, dependent: :destroy
   has_many :reviews, dependent: :destroy
-  accepts_nested_attributes_for :pitch_booking_services, allow_destroy: true
 
   validates :name, presence: true
   validates :image, content_type: {in: %w(image/jpeg image/gif image/png),

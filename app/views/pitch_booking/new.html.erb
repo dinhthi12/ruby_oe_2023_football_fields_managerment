@@ -1,3 +1,4 @@
+    <h3 class = "text-center"><%= t "pitch.formbooking" %></h3>
 
 <%= form_for @pitch_booking, url: pitch_pitch_booking_index_path  do |form| %>
   <%= form.hidden_field :pitch_id, value: @pitch_booking.pitch_id %>
@@ -18,5 +19,7 @@
   <div class="links">
     <%= link_to_add_association t("user.home.addService"), form, :pitch_booking_services, class: 'btn btn-primary' %>
   </div>
-  <%= form.submit t "btn.booking_pitch" %>
+  <div class = "text-center">
+  <%= form.submit t("btn.booking_pitch"), class: "btn btn-primary " %>
+  </div>
 <% end %>
