@@ -28,3 +28,5 @@ image:
   resize_to_limit: [200, 100]
   resize_to_limit_preview: [200, 100]
   accept_path: "image/jpeg, image/gif, image/png"
+pitch_booking:
+  status: ["abc", "def"]

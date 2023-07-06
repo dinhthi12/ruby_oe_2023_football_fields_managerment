@@ -1,4 +1,4 @@
-    <h3 class = "text-center"><%= t "pitch.formbooking" %></h3>
+<h3 class = "text-center"><%= t "pitch.formbooking" %></h3>
 
 <%= form_for @pitch_booking, url: pitch_pitch_booking_index_path  do |form| %>
   <%= form.hidden_field :pitch_id, value: @pitch_booking.pitch_id %>

@@ -106,3 +106,9 @@ vi:
     detail: "Thông tin chi tiết sân"
     lispitch: "Danh sách sân"
     formbooking: "Đơn đặt sân"
+
+  pitch_booking:
+    statuses:
+      pending: Đang chờ
+      approved: Đã chấp nhận
+      cancelled: Đã hủy
