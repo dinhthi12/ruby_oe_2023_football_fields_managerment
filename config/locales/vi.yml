@@ -53,6 +53,7 @@ vi:
    err: "lỗi"
    failed: "Thất bại"
    notfound: "khong tim thay"
+   notlogin: "Ban chua dang nhap"
 
   admin:
     list_users: "Danh sách người dùng"
@@ -92,3 +93,5 @@ vi:
         separator: "."
         precision: 3
         format: "%n%u"
+  pitch:
+    detail: "Thong tin chi tiet san"

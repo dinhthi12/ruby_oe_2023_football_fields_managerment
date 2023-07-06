@@ -1,6 +1,6 @@
 <div class="container site-section">
   <div class="row">
-    <h3><%= t ".detail" %></h3>
+    <h3 class = "text-center"><%= t "pitch.detail" %></h3>
     <div class="col-lg-6">
       <div class="custom-media d-flex">
         <div class="text">
@@ -17,7 +17,7 @@
   </div>
   <hr>
   <div class="row">
-    <h3><%= t ".order_form" %></h3>
-    <p>Hien thi danh sach user da dat san</p>
+    <h3><%= t "user.home.order_form" %></h3>
+    <%= link_to t("dat san"), new_pitch_pitch_booking_path(@pitch),class: "btn btn-info"%>
   </div>
 </div>
