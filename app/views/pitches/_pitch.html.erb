@@ -3,6 +3,7 @@
   <td><%= pitch.rate %></td>
   <td><%= pitch.pitch_type %></td>
   <td><%= number_to_currency(pitch.hour_price) %></td>
-  <td><%= link_to t("btn.detail"),pitch_path(pitch), class: "btn btn-primary" %>
+  <td>
+    <%= link_to t("btn.detail"),pitch_path(pitch), class: "btn btn-primary" %>
   </td>
 </tr>
