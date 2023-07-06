@@ -9,6 +9,8 @@ require("turbolinks").start();
 require("@rails/activestorage").start();
 require("channels");
 require("jquery");
+require("jquery-ui");
+require("jquery-datetimepicker");
 import "bootstrap";
 global.toastr = require("toastr");
 toastr.options = {

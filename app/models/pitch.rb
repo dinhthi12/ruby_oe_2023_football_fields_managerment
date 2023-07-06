@@ -16,6 +16,11 @@ class Pitch < ApplicationRecord
   }
   scope :search_by_name, ->(name){where("name LIKE ?", name) if name.present?}
 
+  scope :search_by_price_range, lambda {|max_price|
+    where("hour_price BETWEEN 0 AND ?", max_price.to_s) if max_price.present?
+  }
+  scope :search_by_name, ->(name){where("name LIKE ?", name) if name.present?}
+
   def display_image
     image.variant resize_to_limit: Settings.image.resize_to_limit
   end

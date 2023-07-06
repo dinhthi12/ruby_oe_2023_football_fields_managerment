@@ -26,6 +26,12 @@ vi:
         des: "Mô tả"
         hour_price: "Giờ sân"
         image: "Hình ảnh"
+      pitch_booking:
+        time_start: "Thời gian bắt đầu"
+        time_end: "Thời gian kết thúc"
+        name: "Tên người thứ 2"
+        phone: "Số điện thoại người thứ 2"
+        des: "Mô tả"
 
   language: "Ngôn ngữ"
   base_title: "Sân bóng đá Đa Phước"
@@ -116,7 +122,9 @@ vi:
     validate:
       time_start: "Thời gian bắt đầu không được bé hơn thời gian hiện tại hoặc lớn hơn thời gian kết thúc"
     lispitch: "Danh sách sân"
-    notfound: "Không tìm thấy"
-    back: "Quay lai danh sách"
+    formbooking: "Đơn đặt sân"
     name: "Tên"
     price: "Giá"
+  booking:
+    validate:
+      time_start: "Thời gian bắt đầu không được bé hơn thời gian hiện tại hoặc lớn hơn thời gian kết thúc"
