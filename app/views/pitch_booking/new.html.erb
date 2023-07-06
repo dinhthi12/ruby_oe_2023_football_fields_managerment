@@ -1,1 +1,22 @@
-<h5>Man hinh dat san khi user da login</h5>
+
+<%= form_for @pitch_booking, url: pitch_pitch_booking_index_path  do |form| %>
+  <%= form.hidden_field :pitch_id, value: @pitch_booking.pitch_id %>
+  <div class="field">
+    <%= render "shared/error_messages", object: form.object %>
+    <%= form.label :time_start, t(User.human_attribute_name :time_start) %>
+    <%= form.datetime_field :time_start, class: "form-control" %>
+    <%= form.label :time_end, t(User.human_attribute_name :time_end) %>
+    <%= form.datetime_field :time_end, class: "form-control " %>
+    <%= form.label :name, t(User.human_attribute_name :name) %>
+    <%= form.text_field :name, class: "form-control" %>
+    <%= form.label :phone, t(User.human_attribute_name :phone) %>
+    <%= form.text_field :phone, class: "form-control" %>
+    <%= form.label :des, t(User.human_attribute_name :des) %>
+    <%= form.text_area :des, class: "form-control" %>
+  </div>
+  <h3><%= t "user.home.service" %></h3>
+  <div class="links">
+    <%= link_to_add_association t("user.home.addService"), form, :pitch_booking_services, class: 'btn btn-primary' %>
+  </div>
+  <%= form.submit t "btn.booking_pitch" %>
+<% end %>

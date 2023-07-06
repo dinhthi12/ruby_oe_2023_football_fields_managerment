@@ -3,6 +3,8 @@ class Pitch < ApplicationRecord
 
   has_many :pitch_bookings, dependent: :destroy
   has_many :reviews, dependent: :destroy
+  accepts_nested_attributes_for :pitch_booking_services, allow_destroy: true
+
   validates :name, presence: true
   validates :image, content_type: {in: %w(image/jpeg image/gif image/png),
                                    message: :valid_format},
@@ -10,6 +12,8 @@ class Pitch < ApplicationRecord
                            message: :should_less_than}
   validates :pitch_type, :hour_price, presence: true,
   numericality: {only_integer: true}
+
+
 
   scope :sort_list_pitch, ->{order :name}
 

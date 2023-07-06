@@ -1,7 +1,11 @@
 class PitchBookingController < ApplicationController
   before_action :require_login
 
-  def new; end
+  def new
+    @pitch_booking = PitchBooking.new
+    @pitch_booking.services.build
+    @services = Service.all
+  end
 
   private
 
