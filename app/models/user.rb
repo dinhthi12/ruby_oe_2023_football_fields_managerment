@@ -23,6 +23,8 @@ class User < ApplicationRecord
   validates :password,
             format: {with: Settings.user.password.regex}
 
+  scope :listUser, ->{User.user}
+
   has_secure_password
 
   class << self

@@ -16,7 +16,8 @@ Rails.application.routes.draw do
       root to: "static_pages#home"
       get "/home", to: "static_pages#home"
       get "/help", to: "static_pages#help"
-      resources :pitchs
+      resources :users, only: %i(index show)
+      resources :pitches
     end
   end
 end
