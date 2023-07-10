@@ -1,24 +1,17 @@
 <tr>
-  <td><%= pitch_booking.time_start %></td>
-  <td><%= pitch_booking.time_end %></td>
+  <td><%= pitch_booking.time_start&.strftime("%H:%M - %d/%m") %></td>
+  <td><%= pitch_booking.time_end&.strftime("%H:%M - %d/%m") %></td>
   <td><%= pitch_booking.total_price %></td>
   <td><%= I18n.t("pitch_booking.statuses.#{pitch_booking.status}") %></td>
   <td><%= pitch_booking.des %></td>
   <td><%= pitch_booking.phone %></td>
   <td><%= pitch_booking.name %></td>
-  <% @pitch_bookings.each do |booking| %>
-    <td>
-      <%= booking.pitch.name %>
-    </td>
-    <td>
-      <%= booking.user.name %>
-    </td>
-  <% end %>
+  <td><%= pitch_booking.pitch_name %></td>
+  <td><%= pitch_booking.user_name %></td>
   <td>
     <% if pitch_booking.pending_status? %>
 
       <%= form_with(model: @pitch_booking, url: admin_pitch_booking_url(pitch_booking), method: :patch, remote: true) do |f| %>
-       <% byebug %>
         <%= f.select :status, options_for_select(pitch_booking_status_options) %>
         <%= f.submit 'Cập nhật' %>
       <% end %>

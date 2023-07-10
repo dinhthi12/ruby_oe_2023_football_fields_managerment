@@ -10,11 +10,10 @@ class Admin::PitchBookingsController < Admin::BaseController
   def show; end
 
   def update
-    byebug
-    if @pitch_booking.update(status: PitchBooking.statuses[:status])
+    if @pitch_booking.update(status: params[:status])
       respond_to do |format|
         format.html{redirect_to admin_pitch_bookings_path}
-        format.js # Xử lý khi yêu cầu AJAX
+        format.js
       end
     else
       render :edit
