@@ -12,16 +12,17 @@ vi:
         address: "Địa chỉ"
         confirmation: "Xác nhận mật khẩu"
       pitch:
-        name: "Ten san"
-        pitch_type: "Loai san"
-        rate: "Danh gia"
-        hour_price: "gio san"
-        image: "Hinh anh"
+        name: "Tên sân"
+        pitch_type: "Loại sân"
+        rate: "Đánh giá"
+        hour_price: "Giờ sân"
+        image: "Hình ảnh"
 
   language: "Ngôn ngữ"
   base_title: "Sân bóng đá Đa Phước"
   homepage: "Trang chủ"
   helppage: "Giúp đỡ"
+  pitchpage: "Sân bóng"
   static_pages:
     home:
       title: "Trang chủ"
@@ -51,14 +52,14 @@ vi:
    success: "Thành công"
    err: "lỗi"
    failed: "Thất bại"
-   notfound: "khong tim thay"
+   notfound: "Không tìm thấy"
 
   admin:
     list_users: "Danh sách người dùng"
     list_pitchs: "Danh sách sân"
     list_services: "Danh sách dịch vụ"
     pitch_create: "Tạo sân"
-    pitch_edit: "Sua san"
+    pitch_edit: "Sửa sân"
 
   table:
     id: "Mã"
@@ -76,7 +77,8 @@ vi:
     edit: "Sửa"
     delete: "Xóa"
     create: "Tạo mới"
-
+    notlogin: "Bạn chưa đăng nhập"
+    search: "Tìm kiếm"
   models:
     pich:
       valid_format: "cần phải đúng định dạng hình ảnh"
@@ -90,3 +92,9 @@ vi:
         separator: "."
         precision: 3
         format: "%n%u"
+  pitch:
+    lispitch: "Danh sách sân"
+    notfound: "Không tìm thấy"
+    back: "Quay lai danh sách"
+    name: "Tên"
+    price: "Giá"
