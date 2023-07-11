@@ -31,7 +31,7 @@ class Admin::PitchesController < Admin::BaseController
   end
 
   def index
-    @pagy, @pitches = pagy Pitch.sort_list_pitch, items: Settings.digits.pagy_10
+    @pagy, @pitches = pagy Pitch.sort_list_pitch_by_name, items: Settings.digits.pagy_10
   end
 
   private

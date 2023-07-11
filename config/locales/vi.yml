@@ -60,6 +60,10 @@ vi:
     list_services: "Danh sách dịch vụ"
     pitch_create: "Tạo sân"
     pitch_edit: "Sửa sân"
+    list_booking: "Danh sách đặt sân"
+    action:
+      approved_status: "Đã chấp nhận"
+      canceled_status: "Da huy"
 
   table:
     id: "Mã"
@@ -72,6 +76,13 @@ vi:
     pitch_type: "Loại sân"
     hour_price: "Giá sân"
     rate: "Đánh giá"
+    time_start: "Thời gian bắt đầu"
+    time_end: "Thời gian kết thúc"
+    total_price: "Tổng tiền"
+    status: "Trạng thái"
+    namepitch: "Tên sân"
+    nameuser: "Tên người đặt"
+    des: "Ghi chú"
   btn:
     detail: "Xem chi tiết"
     edit: "Sửa"
@@ -98,3 +109,8 @@ vi:
     back: "Quay lai danh sách"
     name: "Tên"
     price: "Giá"
+  pitch_booking:
+    statuses:
+      pending: Đang chờ
+      approved: Đã chấp nhận
+      cancelled: Đã hủy

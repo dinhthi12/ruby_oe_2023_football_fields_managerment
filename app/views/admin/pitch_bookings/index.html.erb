@@ -1,0 +1,20 @@
+<table class="table text-center">
+  <thead>
+    <tr>
+      <th><%= t "table.time_start" %></th>
+      <th><%= t "table.time_end" %></th>
+      <th><%= t "table.total_price" %></th>
+      <th><%= t "table.status" %></th>
+      <th><%= t "table.des" %></th>
+      <th><%= t "table.phone" %></th>
+      <th><%= t "table.name" %></th>
+      <th><%= t "table.namepitch" %></th>
+      <th><%= t "table.nameuser" %></th>
+      <th><%= t "table.action" %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @pitch_bookings %>
+  </tbody>
+</table>
+<%== pagy_bootstrap_nav(@pagy) %>

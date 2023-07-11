@@ -19,6 +19,7 @@ Rails.application.routes.draw do
       get "/help", to: "static_pages#help"
       resources :users, only: %i(index show)
       resources :pitches
+      resources :pitch_bookings
     end
   end
 end
